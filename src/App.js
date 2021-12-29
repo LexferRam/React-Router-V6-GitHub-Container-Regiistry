@@ -15,14 +15,14 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/about' element={<AboutPage />} />
-        <Route path='/users' element={<UsersPage />} />
-        <Route path='users/:id' element={<UserPage />} />
+        <Route path='/test/' element={<HomePage />} />
+        <Route path='/test/about' element={<AboutPage />} />
+        <Route path='/test/users' element={<UsersPage />} />
+        <Route path='/test/users/:id' element={<UserPage />} />
         {/* Navigate redirecciona a otra ruta */}
-        <Route path='/usuarios' element={<Navigate to='/users' />} />
+        <Route path='/test/usuarios' element={<Navigate to='/users' />} />
 
-        <Route path='/dashboard/*' element={<Dashboard />} >
+        <Route path='/test/dashboard/*' element={<Dashboard />} >
           <Route path="welcome" element={<p>Welcome!</p>} />
           <Route path="goodbye" element={<p>Goodbye!</p>} />
         </Route>

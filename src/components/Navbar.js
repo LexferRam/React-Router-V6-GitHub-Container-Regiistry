@@ -6,16 +6,16 @@ export const Navbar = () => {
         <div>
             <ul>
                 <li>
-                    <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/">Home</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/test/">Home</NavLink>
                 </li>
                 <li>
-                    <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/about">About</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/test/about">About</NavLink>
                 </li>
                 <li>
-                    <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/users">Users</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/test/users">Users</NavLink>
                 </li>
                 <li>
-                    <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/dashboard">Dashboard</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/test/dashboard">Dashboard</NavLink>
                 </li>
             </ul>
         </div>

@@ -6,7 +6,7 @@ export const HomePage = () => {
         <div>
             HomePage
 
-            <Link to={`/users/${userID}`}>Users</Link>
+            <Link to={`/test/users/${userID}`}>Users</Link>
         </div>
     )
 }

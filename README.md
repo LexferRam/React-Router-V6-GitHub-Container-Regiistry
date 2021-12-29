@@ -5,5 +5,5 @@
 // Redicrect ==> Navigate
 // useHistory ==> useNavigate 
 <Route path='/about' component={AboutPage} /> ==> <Route path='/about' element={<AboutPage />} />
-//Outlet ==> indica donde se pintara el componete de una subruta(hace referencia al children)
+//Outlet ==> indica donde se pintara el componete de una subruta(hace referencia al children  )
 ```
