@@ -1,0 +1,18 @@
+version: '3'
+#cada contenedor representa un contedenor
+services:
+  reactapp:
+    #primero hacemos el docker build
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - '3003:3000'
+    volumes:
+      - ./src:/app/src
+    # environment:
+      # - REACT_APP_NAME=Lexfer2-development
+      # - CHOKIDAR_USEPOLLING=tru
+    #PASAR variables de entorno con .env
+    env_file:
+      - ./.env
