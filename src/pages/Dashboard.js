@@ -5,7 +5,7 @@ export const Dashboard = () => {
     const navigate = useNavigate()
 
     const handleClick = () => {
-        navigate('/')
+        navigate('/test/')
     }
 
     return (

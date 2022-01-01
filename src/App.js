@@ -8,6 +8,7 @@ import { NotFoundPage } from './pages/NotFoundPage';
 import { Navbar } from './components/Navbar';
 import UserPage from './pages/UserPage';
 import { Dashboard } from './pages/Dashboard';
+import ProtectedRoutes from './ProtectedRoutes';
 
 function App() {
 
@@ -16,7 +17,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/test/' element={<HomePage />} />
-        <Route path='/test/about' element={<AboutPage />} />
+
+        <Route element={<ProtectedRoutes />}>
+          <Route path='/test/about' element={<AboutPage />} />
+        </Route>
+
         <Route path='/test/users' element={<UsersPage />} />
         <Route path='/test/users/:id' element={<UserPage />} />
         {/* Navigate redirecciona a otra ruta */}
